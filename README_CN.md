@@ -32,6 +32,9 @@ $ git clone git@github.com:Hinson-A/pcd2pgm_package.git
 
 ## 更新日志
 
+### 2025年04月14日
+* 添加了在rviz中显示3D点云地图的功能；
+
 ### 2025年04月10日
 * 添加了仿真与真机导航中在rviz上的重定位功能；
 * 修改了README文件中的基础拼写错误；

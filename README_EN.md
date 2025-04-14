@@ -32,6 +32,9 @@ If you do not need to perform gait planning experiments, you do not need to inst
 
 ## Changelog
 
+### April 14, 2025
+* Add 3D point cloud display in rviz.
+
 ### April 10, 2025
 * Add relocation function on rviz in simulation and real machine navigation;
 * Fixed basic spelling errors in the README file;

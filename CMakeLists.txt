@@ -10,6 +10,8 @@ find_package(catkin REQUIRED COMPONENTS
   nav_msgs
   tf
   visualization_msgs
+  pcl_ros
+  pcl_conversions
 )
 
 catkin_package(
@@ -41,6 +43,13 @@ add_executable(footstep_sim_node src/footstep_sim.cpp)
 add_dependencies(footstep_sim_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
 target_link_libraries(footstep_sim_node
   ${catkin_LIBRARIES}
+)
+
+add_executable(point_cloud_display_node src/point_cloud_display.cpp)
+add_dependencies(point_cloud_display_node ${${PROJECT_NAME}_EXPORTED_TARGETS} ${catkin_EXPORTED_TARGETS})
+target_link_libraries(point_cloud_display_node
+  ${catkin_LIBRARIES}
+  ${PCL_LIBRARIES}
 )
 
 #############
